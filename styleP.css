@@ -1,0 +1,212 @@
+/* Reset and general styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Button styles */
+nav ul li a.btn {
+    background-color: #ff9800;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+nav ul li a.btn:hover {
+    background-color: #e68900;
+}
+
+/* Form section styles */
+.register, .login, .post-photo {
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register h2, .login h2, .post-photo h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Farmers section styles */
+.farmers, .photo-gallery {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.farmers h2, .photo-gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#farmers-list, #photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.farmer-profile, .photo-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.farmer-profile h3, .photo-item h3 {
+    margin-bottom: 10px;
+}
+
+.farmer-profile p, .photo-item p {
+    margin-bottom: 5px;
+}
+
+.logged-in-profile {
+    border: 2px solid #4CAF50;
+    background-color: #e8f5e9;
+}
+
+.photo-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+social-media a:hover {
+    color: #ff9800;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
